@@ -1,4 +1,4 @@
-# LV8AndrdWatch
+# LV8AndroidWatch
 
 Compile and study LVGL on Android!
 
