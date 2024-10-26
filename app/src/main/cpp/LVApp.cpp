@@ -102,6 +102,7 @@ void LVApp::lv_loop_task() {
     }
     window = nullptr;
     LOGD("LV App Stopped!!");
+    delete this;
 }
 
 void LVApp::stop() {
@@ -126,4 +127,8 @@ void LVApp::lv_touch_cb_static(lv_indev_drv_t *indev_driver, lv_indev_data_t *da
 
 void LVApp::setApp(const char *name) {
     this->app_name = name;
+}
+
+LVApp::~LVApp() {
+    LOGD("LVApp::~LVApp()!!");
 }
